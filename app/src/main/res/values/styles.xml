@@ -1,0 +1,401 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeWhite" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/purpleish_blue</item>
+        <item name="colorAccent">@color/purply_blue</item>
+        <item name="android:textColor">@color/black_two</item>
+    </style>
+
+    <style name="AppPopupTheme" parent="AppThemeWhite">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+<!--    <style name="TextToolbarTitle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">@dimen/fix_title_bar_height</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:textSize">20dp</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--    </style>-->
+
+    <style name="ButtonLogin">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">@dimen/btn_social_login_width</item>
+        <item name="android:layout_height">@dimen/btn_social_login_height</item>
+    </style>
+
+<!--    <style name="ButtonRoundBlack">-->
+<!--        <item name="android:layout_width">140dp</item>-->
+<!--        <item name="android:layout_height">44dp</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:foreground">?attr/selectableItemBackground</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_black</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundMint">-->
+<!--        <item name="android:layout_width">140dp</item>-->
+<!--        <item name="android:layout_height">44dp</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:foreground">?attr/selectableItemBackground</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_mint</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundPink">-->
+<!--        <item name="android:layout_width">140dp</item>-->
+<!--        <item name="android:layout_height">44dp</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:foreground">?attr/selectableItemBackground</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_pink</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundWhiteStrokeBlack">-->
+<!--        <item name="android:layout_width">140dp</item>-->
+<!--        <item name="android:layout_height">44dp</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:foreground">?attr/selectableItemBackground</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_black</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_white_stroke_black-->
+<!--        </item>-->
+<!--    </style>-->
+
+<!--&lt;!&ndash;    <style name="ButtonPurple">-->
+<!--        <item name="android:layout_width">60dp</item>-->
+<!--        <item name="android:layout_height">22dp</item>-->
+<!--        <item name="android:textSize">10dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_white</item>-->
+<!--        <item name="android:background">@color/purply_blue</item>-->
+<!--    </style>&ndash;&gt;-->
+
+<!--    <style name="ButtonStokePurple">-->
+<!--        <item name="android:layout_width">60dp</item>-->
+<!--        <item name="android:layout_height">22dp</item>-->
+<!--        <item name="android:textSize">10dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_purple</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_stroke_purple</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundWhiteStrokePurple">-->
+<!--        <item name="android:layout_width">122dp</item>-->
+<!--        <item name="android:layout_height">38dp</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_purple</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_white_stroke_purple-->
+<!--        </item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundPurple">-->
+<!--        <item name="android:layout_width">122dp</item>-->
+<!--        <item name="android:layout_height">38dp</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_purple_white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_purple</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundPurpleToggle">-->
+<!--        <item name="android:layout_width">122dp</item>-->
+<!--        <item name="android:layout_height">38dp</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_purple_white_toggle</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_purple_toggle</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundStrokePurple">-->
+<!--        <item name="android:layout_width">71dp</item>-->
+<!--        <item name="android:layout_height">22dp</item>-->
+<!--        <item name="android:textSize">10dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_purple</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_none_stroke_purple</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonPurple">-->
+<!--        <item name="android:layout_width">74dp</item>-->
+<!--        <item name="android:layout_height">40dp</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_purple</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonGrey">-->
+<!--        <item name="android:layout_width">74dp</item>-->
+<!--        <item name="android:layout_height">40dp</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_black</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_grey</item>-->
+<!--    </style>-->
+
+<!--    <style name="InputBox">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/fix_item_height</item>-->
+<!--        <item name="android:singleLine">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="CheckBox">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:layout_marginStart">@dimen/accept_temps_item_padding</item>-->
+<!--        <item name="android:paddingEnd">@dimen/accept_temps_item_padding_10</item>-->
+<!--        <item name="android:paddingStart">@dimen/accept_temps_item_padding_10</item>-->
+<!--        <item name="android:textColor">@color/black_two</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="CheckBoxAcceptTerms" parent="CheckBox">-->
+<!--        <item name="android:button">@drawable/xml_check</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonAcceptTerms">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:layout_alignParentEnd">true</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:background">?selectableItemBackgroundBorderless</item>-->
+<!--        <item name="android:paddingEnd">@dimen/accept_temps_item_padding_10</item>-->
+<!--        <item name="android:paddingStart">@dimen/accept_temps_item_padding_10</item>-->
+<!--        <item name="android:src">@drawable/ic_list_arrow_right</item>-->
+<!--    </style>-->
+
+<!--    <style name="RadioStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">-->
+<!--        <item name="android:colorControlNormal">@color/pinkish_grey</item>-->
+<!--        <item name="android:colorAccent">@color/purply_blue</item>-->
+<!--        <item name="android:textColor">@color/black_two</item>-->
+<!--    </style>-->
+
+<!--    <style name="Divide1">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/view_1</item>-->
+<!--        <item name="android:background">@color/pale_grey</item>-->
+<!--        <item name="android:layout_marginStart">@dimen/accept_temps_item_padding</item>-->
+<!--        <item name="android:layout_marginEnd">@dimen/accept_temps_item_padding</item>-->
+<!--    </style>-->
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+<!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>-->
+<!--    <style name="TableStyle1Title">-->
+<!--        <item name="android:layout_width">80dp</item>-->
+<!--        <item name="android:layout_height">@dimen/item_height_32</item>-->
+<!--        <item name="android:background">@color/pale_grey</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textSize">12dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--    </style>-->
+
+<!--    <style name="TableStyle1Content">-->
+<!--        <item name="android:layout_width">0dp</item>-->
+<!--        <item name="android:layout_weight">1</item>-->
+<!--        <item name="android:textSize">13dp</item>-->
+<!--        <item name="android:layout_height">@dimen/item_height_32</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--    </style>-->
+
+<!--    <style name="TableParkingPaymentTitle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">13dp</item>-->
+<!--        <item name="android:layout_gravity">center_vertical</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:textColor">@color/brownish_grey</item>-->
+<!--    </style>-->
+
+<!--    <style name="TableParkingPaymentContent">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:layout_alignParentEnd">true</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:textColor">@color/black_two</item>-->
+<!--    </style>-->
+
+<!--    <style name="LayoutItemMyPage">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">50dp</item>-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--        <item name="android:foreground">?android:attr/selectableItemBackground</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_20</item>-->
+<!--        <item name="android:paddingEnd">@dimen/margin_20</item>-->
+<!--    </style>-->
+
+<!--    <style name="TableMyPageTitle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:drawablePadding">10dp</item>-->
+<!--        <item name="android:layout_gravity">center_vertical</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--    </style>-->
+
+<!--    <style name="TableMyPageContent">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:layout_alignParentEnd">true</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:textColor">@color/warm_grey_two</item>-->
+<!--        <item name="android:drawableEnd">@drawable/right</item>-->
+<!--    </style>-->
+
+<!--    <style name="TextSelectArrowDown">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/fix_item_height</item>-->
+<!--        <item name="android:textSize">13dp</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_15</item>-->
+<!--        <item name="android:paddingEnd">@dimen/margin_15</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--        <item name="android:drawableEnd">@drawable/ic_select_arrow_down_nor</item>-->
+<!--        <item name="android:textColor">@color/black_two</item>-->
+<!--    </style>-->
+
+<!--    <style name="TextBoldTitle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">13dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/margin_20</item>-->
+<!--    </style>-->
+
+<!--    <style name="TextRecyclerViewEmptyMsg">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:layout_centerVertical">true</item>-->
+<!--        <item name="android:layout_centerHorizontal">true</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@color/colorPrimary</item>-->
+<!--        <item name="android:textSize">12dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonRoundSelectorPurpleCheck">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textSize">11dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:drawableStart">@drawable/xml_button_selector_check</item>-->
+<!--        <item name="android:layout_marginEnd">@dimen/margin_15</item>-->
+<!--        <item name="android:layout_alignParentEnd">true</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_grey_purple</item>-->
+<!--        <item name="android:text">@string/select_all</item>-->
+<!--    </style>-->
+
+<!--    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">-->
+<!--    </style>-->
+
+<!--    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">-->
+<!--    </style>-->
+
+
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--// admin-->
+<!--    <style name="ButtonRoundBlackSmall">-->
+<!--        <item name="android:layout_width">60dp</item>-->
+<!--        <item name="android:layout_height">26dp</item>-->
+<!--        <item name="android:textSize">10dp</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_white</item>-->
+<!--        <item name="android:background">@drawable/xml_button_selector_round_black</item>-->
+<!--    </style>-->
+<!--    <style name="TextWhiteBox">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/item_height_50</item>-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:paddingEnd">@dimen/margin_15</item>-->
+<!--        <item name="android:foreground">?android:attr/selectableItemBackground</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_15</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--    </style>-->
+<!--    <style name="ButtonNextArrow">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/item_height_50</item>-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--        <item name="android:drawableEnd">@drawable/ic_list_arrow_right</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:paddingEnd">@dimen/margin_15</item>-->
+<!--        <item name="android:foreground">?android:attr/selectableItemBackground</item>-->
+<!--        <item name="android:paddingStart">@dimen/margin_15</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--    </style>-->
+<!--    <style name="TextCustomerComplaintsTitle">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:drawablePadding">3dp</item>-->
+<!--    </style>-->
+<!--    <style name="TextCustomerComplaintsContent">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textColor">@color/charcoal_grey__70</item>-->
+<!--        <item name="android:textSize">14dp</item>-->
+<!--        <item name="android:singleLine">true</item>-->
+<!--        <item name="android:maxLines">1</item>-->
+<!--        <item name="android:ellipsize">end</item>-->
+<!--        <item name="android:layout_gravity">center_vertical</item>-->
+<!--    </style>-->
+<!--    <style name="TextInputField">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:background">#00000000</item>-->
+<!--        <item name="android:paddingStart">15dp</item>-->
+<!--        <item name="android:paddingEnd">15dp</item>-->
+<!--        <item name="android:singleLine">true</item>-->
+<!--        <item name="android:textColor">@drawable/xml_text_selector_edit_disable_black</item>-->
+<!--        <item name="android:textColorHint">@color/pinkish_grey</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--    </style>-->
+<!--    <style name="ButtonAttendanceBottom">-->
+<!--        <item name="android:layout_width">66dp</item>-->
+<!--        <item name="android:layout_height">66dp</item>-->
+<!--        <item name="android:background">@drawable/xml_circle_black</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="ButtonAttendanceBottom2">-->
+<!--        <item name="android:layout_width">66dp</item>-->
+<!--        <item name="android:layout_height">66dp</item>-->
+<!--        <item name="android:background">@drawable/xml_circle_light_orange</item>-->
+<!--        <item name="android:gravity">center</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:textSize">16dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="ViewLineGrey">-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/view_1</item>-->
+<!--        <item name="android:background">@color/white_three</item>-->
+<!--    </style>-->
+
+</resources>

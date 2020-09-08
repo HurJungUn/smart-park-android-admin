@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorAccent</color>
+    <color name="colorPrimaryDark">@color/purply_blue</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">@color/pale_grey</color>
+
+    <color name="trans_grey">#77000000</color>
+    <color name="transparency">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_15">#26ffffff</color>
+    <color name="purply_blue">#66b4ae</color> <!--main_color-->
+    <color name="purpleish_blue">#6ec8c8</color>
+    <color name="black">#333333</color>
+    <color name="lemon">#fff04f</color>
+    <color name="purple_brown">#411c1d</color>
+    <color name="dandelion">#ffea03</color>
+    <color name="shamrock_green">#00bd39</color>
+    <color name="algae_green">#1ac34d</color>
+    <color name="pale_grey">#f5f4f7</color>
+    <color name="pinkish_grey">#c8c8c8</color>
+    <color name="white_two">#dcdcdc</color>
+    <color name="black_two">#1c1c1c</color>
+    <color name="pale_grey_two">#edebf2</color>
+    <color name="black_three">#303030</color>
+    <color name="brownish_grey">#666666</color>
+    <color name="pale_grey_three">#f8f7fa</color>
+    <color name="warm_grey">#999999</color>
+    <color name="warm_grey_two">#9b9b9b</color>
+    <color name="light_orange">#F79F81</color>
+
+
+    <!-- Green -->
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#02D8B0</color>
+    <color name="button_green">#10a54a</color>
+    <color name="pale_grey_four">#e6e4eb</color>
+    <color name="pale_grey_five">#faf9fb</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_90">#E51c1c1c</color>
+    <color name="white_three">#f0f0f0</color>
+    <color name="white_80">#CCffffff</color>
+    <color name="black__10">#19000000</color>
+    <color name="white_10">#E5FFFFFF</color>
+    <color name="black_15">#26000000</color>
+    <color name="grapefruit">#ff5050</color>
+    <color name="charcoal_grey_60">#993e4645</color>
+    <color name="charcoal_grey__70">#b33e4645</color>
+    <color name="pig_pink">#e38b9e</color>
+    <color name="red">#d0021b</color>
+    <color name="black_50">#80000000</color>
+    <color name="watermelon">#f64d55</color>
+    <color name="greyblue">#66b4ae</color>
+    <color name="pinkish_grey_two">#c9c9c9</color>
+    <color name="input_background_disable_color">#edebf2</color>
+    <color name="black_opacity_50">#80000000</color>
+    <color name="gray">#dddddd</color>
+</resources>

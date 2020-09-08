@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/parking_count_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginHorizontal="@dimen/margin_5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:background="@drawable/xml_box_round"
+                android:layout_marginRight="@dimen/margin_5">
+
+                <RelativeLayout
+                    android:id="@+id/parking_in"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/parking_in_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="21"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/parking_in_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="주차중"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/residual"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/residual_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="20"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/residual_count"
+                            android:layout_centerHorizontal="true"
+                            android:text="잔여"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_two"
+                        android:layout_marginVertical="5dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:background="@drawable/xml_box_round"
+                android:layout_marginLeft="@dimen/margin_5">
+
+                <RelativeLayout
+                    android:id="@+id/rounding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/rounding_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rounding_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="회차중"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wating"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/wating_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wating_count"
+                            android:layout_centerHorizontal="true"
+                            android:text="등록대기"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_two"
+                        android:layout_marginVertical="5dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/refresh_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020-08-19 7:35"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/parking_count_list"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_30"/>
+
+        <TextView
+            android:id="@+id/refresh_now_under_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/refresh_now"
+            android:text="2020-08-19 7:35"
+            android:textColor="@color/transparency"
+            android:background="@color/colorAccent"
+            android:layout_alignParentRight="true"/>
+
+        <smartpark.com.admin.view.ExpandableHeightGridView
+            android:id="@+id/parking_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/refresh_now_under_line"
+            android:layout_marginTop="@dimen/margin_15"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
